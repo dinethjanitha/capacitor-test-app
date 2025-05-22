@@ -1,0 +1,190 @@
+.aboutUsContainer {
+  background-color: #1a1a1a;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  max-width: 1200px;
+  width: 90%;
+  border-radius: 22px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  padding-bottom: 60px; 
+  height: auto;
+  position: relative; 
+}
+
+.headerSection {
+  background: linear-gradient(to right, rgb(49, 21, 14) 0%, transparent 50%, rgb(49, 21, 14));
+  background-color: #FF4202;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: -10px;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+  border-radius: 15px;
+}
+
+.headerSection h1 {
+  margin: 0;
+  color: white;
+  letter-spacing: 5px;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contentSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  gap: 30px;
+}
+
+.imageContainer {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -143px;
+}
+
+.basketballImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  filter: drop-shadow(0 0 10px rgba(232, 65, 24, 0.3));
+}
+
+.descriptionContainer {
+  margin-right: 70px;
+  flex: 1;
+  padding: 25px;
+  background: linear-gradient(135deg, black 0%, white 280%, black 140%);
+  border-radius: 10px;
+  line-height: 2;
+  max-width: 600px;
+  height: 300px;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: right;
+  gap: 15px;
+  margin-top: 30px; 
+  margin-right: 90px;
+  position: relative;
+  z-index: 10; 
+}
+
+.socialIcon1 {
+  width: 32px;
+  height: 32px;
+  background-color: #FF4202;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.socialIcon1:hover {
+  transform: translateY(-3px);
+  background-color: #FF4202;
+}
+
+.socialIcon1 svg {
+  width: 18px;
+  height: 18px;
+  fill: white;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .headerSection {
+    width: 70%;
+  }
+  
+  .descriptionContainer {
+    max-width: 450px;
+  }
+  
+  .socialIcons {
+    margin-right: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contentSection {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .imageContainer {
+    margin-bottom: 20px;
+  }
+  
+  .basketballImage {
+    max-width: 80%;
+  }
+  
+  .descriptionContainer {
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
+    margin-right: auto; 
+    min-height: 200px; 
+  }
+  
+  .headerSection {
+    width: 90%;
+  }
+  
+  .headerSection h1 {
+    font-size: 22px;
+    letter-spacing: 3px;
+  }
+  
+  .socialIcons {
+    margin-top: 20px;
+    justify-content: center;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutUsContainer {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+  }
+  
+  .headerSection {
+    width: 95%;
+  }
+  
+  .basketballImage {
+    max-width: 100%;
+  }
+  
+  .descriptionContainer {
+    padding: 15px;
+    width: 100%;
+    margin-right: 0;
+    height: auto;
+  }
+  
+  .socialIcons {
+    justify-content: center;
+    margin-right: 0;
+    position: relative;
+    clear: both;
+    margin-top: 15px;
+  }
+}

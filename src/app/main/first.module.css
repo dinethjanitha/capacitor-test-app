@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+.navbar {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0) 100%),
+    url('/Frame 147.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sportsTV {
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+}
+
+
+.logo1 {
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.navLinks {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  gap: 20px;
+  font-weight: 700;
+  padding: 0;
+  font-size: 1.5rem;
+  z-index: 100;
+}
+
+.navLinks li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+  padding: 5px 10px;
+}
+
+.navLinks li:hover {
+  color: #FF4202;
+}
+
+.navLinks li:focus {
+  outline: 2px solid #FF4202;
+  color: #FF4202;
+}
+
+.navLinks span {
+  font-size: 1rem;
+}
+
+.searchItem {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 5px 10px !important;
+}
+
+.searchItem:hover {
+  color: white;
+}
+
+.searchInput {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 4px;
+  font-size: 0.9rem;
+  width: 120px;
+}
+
+.searchIcon {
+  margin-left: 5px;
+  color: #fff;
+  background-color: black;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.searchIcon:hover {
+  background-color: #FF4202;
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  color: #fff;
+  padding: 20px;
+  z-index: 5;
+}
+
+.overlay h1 {
+  font-family: 'ADLaM Display', sans-serif;
+  font-size: 45px;
+  margin: 10px 0 0 40px;
+  letter-spacing: 1px;
+  color: #ff4202;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.slImage p,
+.team p{
+  font-size: 40px;
+  margin-top: 10px;
+  font-weight: 100;
+}
+
+.matchBanner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px 0 0 50px;
+}
+
+.slImage,
+.team {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.slImage img,
+.team img {
+  width: 100px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.vsImg img {
+  width: 200px;
+  height: auto;
+  margin: 0 20px;
+}
+
+.par{
+  margin-top: 30px;
+  margin-left: -30px;
+  position: relative;
+}
+
+.watch{
+  margin-top: 10px;
+  margin-left: 170px;
+  font-size: 30px;
+}
+  
+.live{
+  margin-top: -37px;
+  margin-left: 370px;
+  font-size: 30px;
+  color: #FF4202;
+}
+
+.hamburger {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 200;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+}
+
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.signinPopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 300;
+}
+
+/* Medium screens */
+@media (max-width: 992px) {
+  .overlay h1 {
+    font-size: 38px;
+  }
+  
+  .slImage p,
+  .team p {
+    font-size: 32px;
+  }
+  
+  .watch, .live {
+    font-size: 26px;
+  }
+  
+  .live {
+    margin-left: 320px;
+  }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .sportsTV {
+    top: 15px;
+    left: 15px;
+  }
+
+  .logo1 {
+    width: 150px;
+    height: 75px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .navLinks {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    gap: 15px;
+  }
+
+  .navLinks.active {
+    display: flex;
+  }
+
+  .navLinks li {
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .searchItem {
+    width: 100%;
+    max-width: 180px;
+  }
+
+  .searchInput {
+    width: 100%;
+  }
+
+  .overlay {
+    padding: 15px;
+    justify-content: flex-start;
+    top: 120px;
+  }
+
+  .overlay h1 {
+    font-size: 32px;
+    margin: 10px 0 0 20px;
+  }
+
+  .matchBanner {
+    flex-direction: row;
+    margin: 10px 0 0 20px;
+    gap: 5px;
+  }
+
+  .slImage img,
+  .team img {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .slImage p,
+  .team p {
+    font-size: 28px;
+  }
+
+  .vsImg img {
+    width: 100px;
+    margin: 0 10px;
+  }
+  
+  .par {
+    margin-left: 0;
+  }
+  
+  .watch {
+    margin-left: 90px;
+    font-size: 24px;
+  }
+  
+  .live {
+    margin-left: 220px;
+    font-size: 24px;
+    margin-top: -32px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .sportsTV {
+    top: 10px;
+    left: 10px;
+  }
+
+  .logo1 {
+    width: 120px;
+    height: 60px;
+  }
+  
+  .overlay {
+    top: 100px;
+    padding: 10px;
+  }
+
+  .overlay h1 {
+    font-size: 26px;
+    margin: 10px 0 0 10px;
+  }
+
+  .matchBanner {
+    margin: 5px 0 0 10px;
+  }
+
+  .slImage img,
+  .team img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .slImage p,
+  .team p {
+    font-size: 22px;
+  }
+
+  .vsImg img {
+    width: 70px;
+    margin: 0 5px;
+  }
+  
+  .watch {
+    margin-left: 40px;
+    font-size: 20px;
+  }
+  
+  .live {
+    margin-left: 140px;
+    font-size: 20px;
+    margin-top: -27px;
+  }
+  
+  .navLinks {
+    top: 70px;
+    right: 10px;
+    width: 180px;
+    padding: 15px;
+  }
+}

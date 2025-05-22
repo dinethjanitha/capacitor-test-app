@@ -1,0 +1,121 @@
+.standings-container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 20px; background-color: 
+#1a1919; border-radius: 30px; border: 1px solid 
+#ffffff; }
+
+.standings-header { background: linear-gradient(to right, 
+#ff4500, 
+#ff6a00); padding: 15px 20px; margin-top: -20px; margin-bottom: 20px; text-align: center; box-shadow: 0 4px 8px rgba(255, 69, 0, 0.3); width: 30%; margin-left: auto; margin-right: auto; border-radius: 0 0 30px 30px; }
+
+.standings-header h1 {  font-family: 'Zen dots', sans-serif;margin: 0; letter-spacing: 5px; font-size: 1.8rem; font-weight: 700; color: white; }
+
+.league-title {  font-family: 'Zen dots', sans-serif;display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; background: linear-gradient(to right, black, rgb(255, 89, 0), black); padding: 10px; border-radius: 5px; }
+
+.league-title h2 { font-size: 1.5rem; color: white; letter-spacing: 2px; }
+
+.actions-button { display: flex; }
+
+.dropdown-btn { display: flex; align-items: center; gap: 5px; padding: 8px 12px; border: 1px solid white; cursor: pointer; background: none; border-radius: 50%; color: white; }
+
+/* Desktop Table Styles */ .table-container-desktop { border-radius: 10px; overflow: hidden; overflow-x: auto; display: block; }
+
+.table-header { display: flex; padding: 15px; background-color: 
+#1a1919; color: #ccc; font-size: 0.9rem; font-weight: 500; letter-spacing: 1px; margin-bottom: 10px; min-width: 650px; }
+
+.table-row { display: flex; padding: 15px; border-top: 1px solid #333; background: linear-gradient(90deg, rgba(118, 36, 0, 0.7) 0%, rgba(34, 34, 34, 0.95) 40%); margin-bottom: 10px; border: 1px solid white; border-radius: 26px; transition: all 0.2s ease; min-width: 650px; }
+
+.table-row:hover { background: linear-gradient(90deg, rgba(118, 36, 0, 0.9) 0%, rgba(34, 34, 34, 0.98) 40%); }
+
+.col-team { flex: 2; display: flex; align-items: center; min-width: 150px; }
+
+.col-stat { flex: 0.5; display: flex; align-items: center; justify-content: center; font-weight: 500; min-width: 40px; }
+
+.col-wdl { flex: 1; display: flex; align-items: center; justify-content: center; min-width: 90px; }
+
+.wdl-item { flex: 1; display: flex; align-items: center; justify-content: center; font-weight: 600; }
+
+.wdl-win { color: 
+#ff4500; }
+
+.wdl-draw { color: white; }
+
+.wdl-loss { color: #ccc; }
+
+.col-form { flex: 1.5; display: flex; align-items: center; justify-content: flex-end; gap: 5px; min-width: 170px; }
+
+.form-circle { width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.85rem; }
+
+.form-win { background-color: 
+#ff4500; color: white; }
+
+.form-draw { background-color: 
+#ff4500; color: white; opacity: 0.7; }
+
+.form-loss { background-color: #333; color: white; }
+
+.team-logo { width: 40px; height: 40px; margin-right: 15px; display: flex; align-items: center; justify-content: center; overflow: hidden; border-radius: 50%; background-color: #fff; border: 2px solid 
+#ff4500; flex-shrink: 0; }
+
+.team-logo img { width: 30px; height: 30px; object-fit: contain; }
+
+.team-name { font-weight: 500; letter-spacing: 0.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: white; }
+
+.team-logo:empty::before { content: ""; width: 100%; height: 100%; background-color: 
+#ff4500; }
+
+/* Mobile Table Styles */ .table-container-mobile { display: none; }
+
+.mobile-table-row { background: linear-gradient(90deg, rgba(118, 36, 0, 0.7) 0%, rgba(34, 34, 34, 0.95) 40%); border: 1px solid white; border-radius: 15px; padding: 15px; margin-bottom: 10px; transition: all 0.2s ease; }
+
+.mobile-table-row:hover { background: linear-gradient(90deg, rgba(118, 36, 0, 0.9) 0%, rgba(34, 34, 34, 0.98) 40%); }
+
+.mobile-team-header { display: flex; align-items: center; margin-bottom: 10px; position: relative; }
+
+.points-badge { position: absolute; right: 0; background-color: 
+#ff4500; color: white; font-weight: bold; padding: 5px 10px; border-radius: 15px; font-size: 1.1rem; }
+
+.mobile-stats { display: flex; justify-content: space-between; margin-bottom: 10px; }
+
+.mobile-stat-item { display: flex; flex-direction: column; align-items: center; }
+
+.mobile-stat-label { font-size: 0.8rem; color: #ccc; margin-bottom: 5px; }
+
+.mobile-stat-value { font-weight: 500; color: white; }
+
+.mobile-wdl { display: flex; justify-content: space-between; margin-bottom: 10px; padding: 5px 0; border-top: 1px solid #333; border-bottom: 1px solid #333; }
+
+.mobile-wdl-item { display: flex; gap: 5px; }
+
+.mobile-form { display: flex; flex-direction: column; gap: 5px; }
+
+.mobile-form-items { display: flex; gap: 5px; }
+
+/* Media Queries */ @media (max-width: 768px) { .standings-header { width: 70%; padding: 10px; }
+
+.standings-header h1 { font-size: 1.4rem; }
+
+.league-title h2 { font-size: 1.2rem; }
+
+.team-name { max-width: 120px; }
+
+.form-circle { width: 28px; height: 28px; font-size: 0.8rem; } }
+
+@media (max-width: 640px) { .col-form { gap: 3px; }
+
+.form-circle { width: 25px; height: 25px; font-size: 0.7rem; }
+
+.team-name { max-width: 100px; } }
+
+@media (max-width: 480px) { .standings-container { padding: 10px; border-radius: 20px; }
+
+.table-header, .table-row { padding: 10px; }
+
+.team-logo { width: 30px; height: 30px; margin-right: 8px; }
+
+.team-logo img { width: 20px; height: 20px; }
+
+.team-name { max-width: 80px; } }
+
+/* Switch to mobile view for very small screens */ @media (max-width: 580px) { .table-container-desktop { display: none; }
+
+.table-container-mobile { display: block; } }
+

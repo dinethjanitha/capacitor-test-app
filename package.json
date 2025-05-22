@@ -1,0 +1,39 @@
+{
+  "name": "mvp-v2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "build:static": "npm run build"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.2.0",
+    "@capacitor/cli": "^7.2.0",
+    "@capacitor/core": "^7.2.0",
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@mux/mux-player-react": "^3.4.0",
+    "axios": "^1.9.0",
+    "lucide-react": "^0.510.0",
+    "next": "15.3.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icon": "^1.0.0",
+    "swiper": "^11.2.7"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "daisyui": "^5.0.35",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.1",
+    "react-icons": "^5.5.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

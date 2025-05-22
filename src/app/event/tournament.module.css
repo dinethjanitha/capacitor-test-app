@@ -1,0 +1,253 @@
+.tournamentContainer {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000000;
+  padding: 40px 10px;
+  box-sizing: border-box;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.tournamentHeader {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.tournamentHeader h1 {
+   font-family: 'Zen dots', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ff5500;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 20px 0;
+  text-shadow: 0 0 10px rgba(255, 85, 0, 0.5);
+}
+
+.scheduleList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.matchCard {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.scheduleImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.overlayContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.teamContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.matchDetails {
+  flex: 2;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.matchNumber, 
+.matchDate, 
+.matchTime, 
+.matchVenue {
+  white-space: nowrap;
+  font-size: 1rem;
+}
+
+.matchNumber {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.logoL, 
+.logoR {
+  width: 70px;
+  height: auto;
+  max-width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Ensure left and right alignment */
+.logoL {
+  margin-right: auto;
+  margin-left: 20px;
+}
+
+.logoR {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .tournamentHeader h1 {
+    font-size: 1.8rem;
+    letter-spacing: 4px;
+  }
+
+  .matchItem {
+    height: 70px;
+  }
+
+  .teamContainer {
+    width: 70px;
+  }
+
+  .logoL, 
+  .logoR {
+    width: 45px;
+    height: auto;
+  }
+
+  .logoL {
+    margin-left: 10px;
+  }
+
+  .logoR {
+    margin-right: 10px;
+  }
+  
+  .matchDetails {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tournamentContainer {
+    padding: 20px 5px;
+  }
+
+  .tournamentHeader h1 {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+
+  .matchItem {
+    height: 80px;
+    flex-direction: row;
+    border-radius: 20px;
+    padding: 0;
+  }
+
+  .teamContainer {
+    width: 60px;
+    height: 100%;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .logoL, 
+  .logoR {
+    width: 35px;
+    height: auto;
+  }
+
+  .logoL {
+    margin-left: 5px;
+  }
+
+  .logoR {
+    margin-right: 5px;
+  }
+
+  .matchDetails {
+    padding: 5px;
+    width: auto;
+    flex: 1;
+    gap: 3px;
+  }
+
+  .matchDetails::after {
+    bottom: 5px;
+  }
+
+  .matchNumber {
+    font-size: 0.75rem;
+    margin-bottom: 2px;
+  }
+
+  .matchDatetime {
+    flex-direction: row;
+    gap: 5px;
+    font-size: 0.65rem;
+  }
+
+  .matchVenue {
+    font-size: 0.65rem;
+    letter-spacing: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .tournamentHeader h1 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+
+  .matchItem {
+    height: 70px;
+  }
+
+  .teamContainer {
+    width: 50px;
+  }
+
+  .logoL, 
+  .logoR {
+    width: 28px;
+    height: 26px;
+  }
+
+  .logoL {
+    margin-left: 3px;
+  }
+
+  .logoR {
+    margin-right: 3px;
+  }
+
+  .matchNumber, 
+  .matchDate, 
+  .matchTime, 
+  .matchVenue {
+    white-space: nowrap;
+    font-size: 9px;
+  }
+  
+  .matchDetails {
+    gap: 2px;
+  }
+}

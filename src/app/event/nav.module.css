@@ -1,0 +1,304 @@
+/* Updated nav.module.css */
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+.navbar {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0) 100%),
+    url('/image_fx (57) 1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sportsTV {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+
+.logo1 {
+  width: 200px;
+  height: 100px;
+}
+
+.navLinks {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  gap: 20px;
+  font-weight: 700;
+  padding: 0;
+  font-size: 1.5rem;
+  z-index: 100; 
+}
+
+.navLinks li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+  padding: 5px 10px; 
+}
+
+.navLinks li:hover {
+  color: #ff4400;
+}
+
+.navLinks li:focus {
+  outline: 2px solid #ff4400;
+  color: #ff4400;
+}
+
+.navLinks span {
+  font-size: 1rem;
+}
+
+.searchItem {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 5px 10px !important;
+}
+
+
+.searchItem:hover {
+  color: white;
+}
+
+.searchInput {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 4px;
+  font-size: 0.9rem;
+  width: 120px;
+}
+
+.searchIcon {
+  margin-left: 5px;
+  color: #fff;
+  background-color: black;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.searchIcon:hover {
+  background-color: #ff4400;
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  color: #fff;
+  padding: 20px;
+  z-index: 5;
+}
+
+.overlay h1 {
+  font-family: 'ADLaM Display', sans-serif;
+  font-size: 40px;
+  margin: 10px 0 0 50px;
+  letter-spacing: 1px;
+  color: #ff4202;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.overlay h2 {
+  font-family: 'ADLaM Display', sans-serif;
+  font-size: 40px;
+  margin: 0 0 10px 50px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.matchBanner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px 0 0 50px;
+}
+
+.slImage,
+.team {
+  text-align: center;
+}
+
+.slImage img,
+.team img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.vsImg img {
+  width: 100px;
+  height: auto;
+  margin: 0 20px;
+}
+
+.containerA {
+  margin-top: auto;
+  height: 100px;
+  background-color: lightgray;
+  border: 1px solid #ccc;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+  display: none; 
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 200; 
+  width: 30px;
+  height: 30px; 
+  padding: 5px; 
+}
+
+.hamburger span {
+  display: block;
+  width: 30px; 
+  height: 3px;
+  background: #fff;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Mobile breakpoint */
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .sportsTV {
+    top: 5px;
+    left: 5px;
+  }
+
+  .logo1 {
+    width: 150px;
+    height: 75px;
+  }
+
+  .hamburger {
+    display: block !important; 
+  }
+
+  .navLinks {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    top: 60px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.9); 
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    gap: 15px;
+  }
+
+  .navLinks.active {
+    display: flex !important; 
+  }
+
+  .navLinks li {
+    font-size: 1.2rem;
+    width: 100%; 
+    padding: 10px;
+  }
+
+  .navLinks span {
+    font-size: 0.9rem;
+  }
+
+  .searchItem {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .searchInput {
+    width: 100%;
+  }
+
+  .overlay {
+    padding: 10px;
+    justify-content: flex-start;
+    top: 150px;
+  }
+
+  .overlay h1 {
+    font-size: 1.5rem;
+    margin: 10px 0 0 20px;
+  }
+
+  .overlay h2 {
+    font-size: 1.8rem;
+    margin: 0 0 10px 20px;
+  }
+
+  .matchBanner {
+    flex-direction: row;
+    margin: 10px 0 0 20px;
+    gap: 10px;
+  }
+
+  .slImage img,
+  .team img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .vsImg img {
+    width: 80px;
+    margin: 0 10px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block !important; 
+  }
+}
