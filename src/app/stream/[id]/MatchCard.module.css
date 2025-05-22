@@ -1,0 +1,13 @@
+.leftTriangle {
+    /* background: linear-gradient(to right, #ff3c00, #d12f0d); */
+    background: linear-gradient(to right, #992801, #FF4202, #992801);
+    clip-path: polygon(0 -5%, 100% 50%, 0 105%);
+  }
+  
+  .rightTriangle {
+    /* background: linear-gradient(to left, #ff3c00, #d12f0d)
+     */
+     background: linear-gradient(to right, #992801, #FF4202, #992801);
+    clip-path: polygon(100% -5%, 0 50%, 100% 105%);
+  }
+  

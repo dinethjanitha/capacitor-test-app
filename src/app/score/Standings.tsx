@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import styles from './score.module.css';
 import { FaChevronDown } from 'react-icons/fa';
 import { Anta, Zen_Dots } from 'next/font/google';
+import Image from 'next/image';
 
 const zenfont = Zen_Dots({ subsets: ['latin'], weight: '400' });
 const antafont = Anta({ subsets: ['latin'], weight: '400' });
@@ -121,7 +122,7 @@ const Standing = () => {
           <div key={team.id} className={`${styles.tableRow} ${antafont.className}`}>
             <div className={styles.colTeam1}>
               <div className={styles.teamLogo}>
-                <img src={'UOM.png'} alt='team logo' className={styles.logo} />
+                <Image width={500} height={500} src={'/UOM.png'} alt='team logo' className={styles.logo} />
               </div>
               <div className={styles.teamName}>{team.team}</div>
             </div>

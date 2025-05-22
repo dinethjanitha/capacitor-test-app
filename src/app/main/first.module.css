@@ -167,13 +167,15 @@
   margin-top: 10px;
   margin-left: 170px;
   font-size: 30px;
+  font-weight: 700;
 }
   
 .live{
-  margin-top: -37px;
+  margin-top: -48px;
   margin-left: 370px;
   font-size: 30px;
   color: #FF4202;
+  font-weight: 700;
 }
 
 .hamburger {

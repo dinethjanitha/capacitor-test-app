@@ -37,8 +37,8 @@
   letter-spacing: 0.3rem;
 }
 
-.matchBanner {
-display: flex;
+.matchBannerN {
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
@@ -115,7 +115,8 @@ display: flex;
     font-size: 1.5rem;
   }
   
-  .matchBanner {
+  .matchBannerN {
+    align-items: center;
     gap: 0.5rem;
   }
   
@@ -251,7 +252,8 @@ display: flex;
 
 .divider1 {
   height: 1px;
-  width: 600px;
+  width: 80%;
+  max-width: 600px;
   background-color: white;
   margin: 0 auto 40px auto;
 }
@@ -273,47 +275,30 @@ display: flex;
   text-align: center;
   font-family: 'Arial', sans-serif;
 }
-.sponsorsGrid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  justify-items: center;
-  }
 .divider2 {
   height: 1px;
   width: 450px;
   background-color: white;
   margin: 0 auto 40px auto;
 }
-
+.sponsorsGrid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 150px;
+  flex-wrap: wrap;
+  }
 .sponsorBox {
   width: 150px;
-  height: 100px;
+  height: 150px;
   background-color: #444;
   border-radius: 10px;
   transition: transform 0.3s ease;
-}
-
-.sponsorBox:nth-last-child(1):nth-child(4n+1),
-.sponsorBox:nth-last-child(2):nth-child(4n+1) {
-  grid-column: 2;
-}
-
-.sponsorBox:nth-last-child(2):nth-child(4n+2) {
-  grid-column: 2 / span 2;
-}
-@media (max-width: 1024px) {
-  .sponsorsGrid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
-  .sponsorsGrid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+ 
   .sponsorBox {
     width: 120px;
     height: 80px;
@@ -324,9 +309,7 @@ display: flex;
 }
 
 @media (max-width: 480px) {
-  .sponsorsGrid {
-    grid-template-columns: 1fr;
-  }
+
   .sponsorBox {
     width: 100%;
     max-width: 200px;
@@ -343,7 +326,6 @@ display: flex;
   color: white;
   padding: 80px 20px;
   text-align: center;
-  font-family: 'Arial', sans-serif;
 }
 .divider3 {
   height: 1px;
@@ -355,9 +337,10 @@ display: flex;
 .expertiseList {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 4rem;
   margin: 2rem 0;
   flex-wrap: wrap;
+  cursor: pointer;
 }
 
 .expertiseList span {
@@ -365,37 +348,27 @@ display: flex;
   padding-bottom: 0.5rem;
   letter-spacing: 0.3rem;
 }
-
+.expertiseImages{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 5rem;
+  flex-wrap: wrap;
+  border-radius: 30px;
+ 
+}
 .expertiseBox {
   width: 350px;
   height: 200px;
-  overflow: hidden;
-  border-radius: 10px;
+  border-radius: 50px;
   background-color: #424141;
   transition: transform 0.3s ease;
 }
-.expertiseBox:nth-last-child(1):nth-child(3n+1),
-  .expertiseBox:nth-last-child(2):nth-child(3n+1) {
-  grid-column: 2;
-  }
-
-  .expertiseBox:nth-last-child(2):nth-child(3n+2) {
-  grid-column: 2 / span 2;
-  }
 
 .expertiseBox:hover {
   transform: scale(1.03);
 }
-.expertiseImages {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  padding-bottom: 2rem;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  justify-items: center;
-}
+
 .expertiseBox img {
   width: 100%;
   height: 100%;
@@ -403,33 +376,21 @@ display: flex;
   display: block;
 }
 @media (max-width: 1024px) {
-  .expertiseImages {
-    grid-template-columns: repeat(2, 1fr);
-  }
+
   .divider3 {
     width: 400px;
   }
 }
 
 @media (max-width: 768px) {
-  .expertiseImages {
-    grid-template-columns: 1fr;
-  }
-  .expertiseBox {
-    width: 190px;
-    height: 180px;
-  }
+
   .divider3 {
     width: 280px;
   }
 }
 
 @media (max-width: 480px) {
-  .expertiseBox {
-    width: 160px;
-    max-width: 320px;
-    height: 160px;
-  }
+
   .divider3 {
     width: 200px;
   }
@@ -451,10 +412,10 @@ display: flex;
   margin: 0 auto 40px auto;
 }
 .socialIcons {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 1rem;
+    display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .socialIcon {

@@ -9,7 +9,7 @@ export default function Sponsors() {
       <div className={`${styles.title} ${zenfont.className}`}>OUR-SPONSERS</div>
       <div className={styles.divider2}></div>
       <div className={styles.sponsorsGrid}>
-        {[...Array(8)].map((_, i) => (
+        {[...Array(7)].map((_, i) => (
           <div key={i} className={styles.sponsorBox}></div>
         ))}
       </div>

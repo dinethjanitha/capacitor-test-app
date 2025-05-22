@@ -1,3 +1,4 @@
+/* YOUR ORIGINAL CODE - UNCHANGED */
 .categorySection {
   background-color: #FF4202;
   width: 100%;
@@ -25,7 +26,7 @@
   background-color: #504b4b;
   overflow-x: auto;
   scroll-behavior: smooth;
-  scrollbar-width: none; 
+  scrollbar-width: none;
   -ms-overflow-style: none;
   position: relative;
   white-space: nowrap;
@@ -112,8 +113,6 @@
 }
 
 @media screen and (max-width: 768px) {
- 
-  
   .categoryItem {
     margin: 20px 25px 0;
   }
@@ -128,8 +127,6 @@
 }
 
 @media screen and (max-width: 576px) {
-  
-  
   .categoryItem {
     margin: 15px 20px 0;
     min-width: 60px;
@@ -165,5 +162,350 @@
   
   .categoryItem svg {
     font-size: 1.5rem;
+  }
+}
+
+/* ========== ENHANCED RESPONSIVE ADDITIONS ========== */
+
+/* Large Desktop (1200px and up) */
+@media screen and (min-width: 1200px) {
+  .categorySection h1 {
+    font-size: 2rem;
+  }
+  
+  .categoryItem {
+    margin: 40px 60px 0;
+    min-width: 100px;
+  }
+  
+  .categoryItem h1 {
+    font-size: 1.2rem;
+  }
+  
+  .categoryItem svg {
+    font-size: 2.5rem;
+  }
+  
+  .navButton {
+    font-size: 2.5rem;
+  }
+  
+  .addContainer1 {
+    min-height: 140px;
+  }
+}
+
+/* Medium Desktop (992px - 1199px) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .categorySection h1 {
+    font-size: 1.8rem;
+  }
+  
+  .categoryItem {
+    margin: 35px 45px 0;
+    min-width: 90px;
+  }
+  
+  .categoryItem h1 {
+    font-size: 1.1rem;
+  }
+  
+  .categoryItem svg {
+    font-size: 2.3rem;
+  }
+  
+  .navButton {
+    font-size: 2.2rem;
+  }
+}
+
+/* Enhanced Tablet (768px - 991px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .categorySection h1 {
+    font-size: 1.6rem;
+  }
+  
+  .categoryContainer {
+    padding: 0 15px;
+  }
+  
+  .categoryItem {
+    margin: 25px 35px 0;
+    min-width: 75px;
+  }
+  
+  .categoryItem h1 {
+    font-size: 1rem;
+  }
+  
+  .categoryItem svg {
+    font-size: 2.1rem;
+  }
+  
+  .navButton {
+    font-size: 1.6rem;
+    left: 5px;
+  }
+  
+  .rightNav {
+    right: 5px;
+  }
+}
+
+/* Enhanced Large Mobile (576px - 767px) */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .categorySection h1 {
+    font-size: 1.4rem;
+    padding: 5px 0;
+  }
+  
+  .categoryContainer {
+    padding: 0 10px;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #FF4202 #504b4b;
+  }
+  
+  .categoryContainer::-webkit-scrollbar {
+    display: block;
+    height: 4px;
+  }
+  
+  .categoryContainer::-webkit-scrollbar-track {
+    background: #504b4b;
+  }
+  
+  .categoryContainer::-webkit-scrollbar-thumb {
+    background: #FF4202;
+    border-radius: 2px;
+  }
+  
+  .categoryItem {
+    margin: 20px 18px 0;
+    min-width: 65px;
+    flex-shrink: 0;
+  }
+  
+  .categoryItem h1 {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+  }
+  
+  .categoryItem svg {
+    font-size: 1.8rem;
+  }
+  
+  .navButton {
+    font-size: 1.3rem;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+  }
+  
+  .leftNav {
+    left: 5px;
+  }
+  
+  .rightNav {
+    right: 5px;
+  }
+  
+  .addContainer1 {
+    min-height: 90px;
+  }
+}
+
+/* Enhanced Small Mobile (360px - 575px) */
+@media screen and (min-width: 360px) and (max-width: 575px) {
+  .categorySection {
+    padding: 8px 0;
+  }
+  
+  .categorySection h1 {
+    font-size: 1.3rem;
+  }
+  
+  .categoryContainer {
+    padding: 0 8px;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #FF4202 #504b4b;
+    padding-bottom: 15px;
+  }
+  
+  .categoryContainer::-webkit-scrollbar {
+    display: block;
+    height: 3px;
+  }
+  
+  .categoryContainer::-webkit-scrollbar-track {
+    background: #504b4b;
+  }
+  
+  .categoryContainer::-webkit-scrollbar-thumb {
+    background: #FF4202;
+    border-radius: 2px;
+  }
+  
+  .categoryItem {
+    margin: 15px 15px 0;
+    min-width: 55px;
+    flex-shrink: 0;
+  }
+  
+  .categoryItem h1 {
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 80px;
+  }
+  
+  .categoryItem svg {
+    font-size: 1.6rem;
+  }
+  
+  .navButton {
+    font-size: 1.1rem;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .leftNav {
+    left: 3px;
+  }
+  
+  .rightNav {
+    right: 3px;
+  }
+  
+  .addContainer1 {
+    min-height: 70px;
+    margin-top: 15px;
+  }
+}
+
+/* Extra Small Mobile (up to 359px) */
+@media screen and (max-width: 359px) {
+  .categorySection {
+    padding: 6px 0;
+  }
+  
+  .categorySection h1 {
+    font-size: 1.2rem;
+  }
+  
+  .categoryContainer {
+    padding: 0 5px;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #FF4202 #504b4b;
+    padding-bottom: 12px;
+  }
+  
+  .categoryContainer::-webkit-scrollbar {
+    display: block;
+    height: 2px;
+  }
+  
+  .categoryContainer::-webkit-scrollbar-track {
+    background: #504b4b;
+  }
+  
+  .categoryContainer::-webkit-scrollbar-thumb {
+    background: #FF4202;
+    border-radius: 1px;
+  }
+  
+  .categoryItem {
+    margin: 12px 12px 0;
+    min-width: 45px;
+    flex-shrink: 0;
+  }
+  
+  .categoryItem h1 {
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 60px;
+  }
+  
+  .categoryItem svg {
+    font-size: 1.4rem;
+  }
+  
+  .navButton {
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .leftNav {
+    left: 2px;
+  }
+  
+  .rightNav {
+    right: 2px;
+  }
+  
+  .addContainer1 {
+    min-height: 60px;
+    margin-top: 12px;
+  }
+}
+
+/* Touch device enhancements */
+@media (hover: none) and (pointer: coarse) {
+  .categoryItem:hover {
+    transform: none;
+  }
+  
+  .categoryItem:active {
+    transform: scale(0.95);
+  }
+  
+  .navButton:hover {
+    opacity: 0.8;
+  }
+  
+  .navButton:active {
+    opacity: 1;
+    transform: translateY(-50%) scale(0.95);
+  }
+}
+
+/* Landscape orientation for mobile */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .categorySection {
+    padding: 5px 0;
+  }
+  
+  .categorySection h1 {
+    font-size: 1.2rem;
+  }
+  
+  .categoryItem {
+    margin: 10px 20px 0;
+  }
+  
+  .categoryItem h1 {
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+  }
+  
+  .categoryItem svg {
+    font-size: 1.5rem;
+  }
+  
+  .addContainer1 {
+    min-height: 50px;
   }
 }

@@ -7,12 +7,12 @@ import Link from "next/link";
 const NavBarMain = () => {
   return (
     <div className="navbar absolute z-10 justify-between flex p-0 border-0">
-      <div className="navbar-start w-[400px]">
+      <div className="navbar-start w-fit relative h-auto">
         <a className="btn btn-ghost text-xl p-0 m-0">
           <Image
             width={400}
             height={200}
-            className="lg:mt-10 md:mt-10 mt-9"
+            className="lg:mt-10 md:mt-10 mt-9 w-full max-w-full h-auto"
             src="/LOGO with Silver dude.png"
             alt="Logo"
           />

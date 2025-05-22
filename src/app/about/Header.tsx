@@ -13,7 +13,7 @@ export default function Header() {
     <div className={`${styles.navbar}`}>
       <div className={`${styles.overlay} mt-25`}>
         <p className={adlam.className}>SUPER LEAGUE 2025</p>
-        <div className={styles.matchBanner}>
+        <div className={styles.matchBannerN}>
           <div className={styles.slImage}>
             <Image src="/UOC.png" alt="UOC" width={80} height={70} />
             <p className={actor.className}>UOM</p>

@@ -1,9 +1,10 @@
 import React from 'react';
 import styles from './gallery.module.css';
+import Image from 'next/image';
 
 const Gallery = () => {
   const matches = Array(6).fill({
-    image: 'image_fx (18).png', // Replace with actual image path
+    image: '/image_fx (18).png', // Replace with actual image path
     title: 'A vs B',
   });
 
@@ -14,7 +15,7 @@ const Gallery = () => {
       <div className={styles.galleryGrid}>
         {matches.map((match, index) => (
           <div className={styles.card} key={index}>
-            <img src={match.image} alt={match.title} className={styles.image} />
+            <Image width={500} height={500} src={match.image} alt={match.title} className={styles.image} />
             <div className={styles.label}>{match.title}</div>
           </div>
         ))}

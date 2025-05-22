@@ -1,62 +1,59 @@
+/* YOUR ORIGINAL CODE - UNCHANGED */
 .trendingContainer {
   background-color: #1a1a1a;
   margin-top: 20px;
- 
   height: auto;
 }
 
-
 .rowWrapperContainer {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 10px;
-    margin-bottom: 90px;
-    flex-wrap: wrap;
-    
-  }
-  
-  
-  .topSection {
-    background: linear-gradient(to right, rgb(49, 21, 14) 0%, transparent 50%, rgb(49, 21, 14));
-    background-color: #FF4202;
-    width: 600px;
-    margin: 0 auto;
-    padding: 10px 0;
-    text-align: center;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 10px;
+  margin-bottom: 90px;
+  flex-wrap: wrap;
+}
+
+.topSection {
+  background: linear-gradient(to right, rgb(49, 21, 14) 0%, transparent 50%, rgb(49, 21, 14));
+  background-color: #ff4202;
+  width: 600px;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  }
-  
-  .topSection h1 {
-    margin: 0;
-    color: white;
-    letter-spacing: 5px;
-    font-size: 28px;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-  
-  .customBackground {
-    width: 600px;
-    height: 400px;
-    border-radius: 20px;
-    background: linear-gradient(
-        135deg,
-        rgba(0, 0, 0, 0.9) 20%, 
-        rgba(255, 60, 0, 0.1) 50%,
-        rgba(0, 0, 0, 0.9) 80%
-      ),
-      #000;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    border: 1px solid rgba(234, 230, 230, 0.1);
-    cursor: pointer;
-  }
-  
- .mostSection {
-  background-color: #FF4202;
+}
+
+.topSection h1 {
+  margin: 0;
+  color: white;
+  letter-spacing: 5px;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.customBackground {
+  width: 600px;
+  height: 400px;
+  border-radius: 20px;
+  background: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.9) 20%,
+      rgba(255, 60, 0, 0.1) 50%,
+      rgba(0, 0, 0, 0.9) 80%
+    ),
+    #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  border: 1px solid rgba(234, 230, 230, 0.1);
+  cursor: pointer;
+}
+
+.mostSection {
+  background-color: #ff4202;
   width: 300px;
   height: 50px;
   padding: 10px 0;
@@ -66,119 +63,514 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto; 
-  
+  margin: 0 auto;
 }
 
+.mostSection h1 {
+  margin: 0;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.cardContainer {
+  background-color: rgb(28, 26, 26);
+  width: 400px;
+  height: 250px;
+  margin-top: 45px;
+  margin-left: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative; /* Needed for absolute child */
+}
+
+.cardContainer h1 {
+  margin: 0;
+  margin-left: 60px;
+  margin-top: 15px;
+  color: white;
+  letter-spacing: 5px;
+  font-size: 20px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.inside {
+  margin-left: 30px;
+}
+
+.text1 {
+  margin-top: 80px;
+  margin-left: 20px;
+  color: white;
+}
+
+.text2 {
+  margin-top: -60px;
+  margin-left: 160px;
+  color: white;
+}
+
+.text3 {
+  margin-top: -58px;
+  margin-left: 280px;
+  color: white;
+}
+
+.team1Logo {
+  margin-top: -55px;
+  margin-left: 70px;
+  width: 80px;
+  height: auto;
+}
+
+.team2Logo {
+  margin-top: -55px;
+  margin-left: 190px;
+  width: 90px;
+  height: auto;
+}
+
+.rowContainer {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.rowWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.wonSection {
+  background-color: #ff4202;
+  width: 240px;
+  height: 40px;
+  padding: 10px 0;
+  text-align: center;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.wonSection h1 {
+  margin: 0;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+}
+
+.advertisementContainer {
+  background-color: black;
+  min-height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advertisementContainer h1 {
+  color: white;
+  margin: 0;
+}
+
+/* ========== RESPONSIVE ADDITIONS ========== */
+
+/* Hide specific card container on desktop */
+@media (min-width: 1025px) {
+  .trending-module__1WmKnG__cardContainer {
+    display: none !important;
+  }
+}
+
+/* Tablets and Small Desktops (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .rowWrapperContainer {
+    gap: 30px;
+    padding: 0 20px;
+  }
   
-  .mostSection h1 {
-    margin: 0;
-    color: white;
-    letter-spacing: 1px;
-    font-size: 24px;
-    font-weight: 700;
-    text-transform: uppercase;
+  .topSection {
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  .customBackground {
+    width: 90%;
+    max-width: 600px;
+    height: 350px;
   }
   
   .cardContainer {
-    background-color: rgb(28, 26, 26);
-    width: 400px;
-    height: 250px;
-    margin-top: 45px;
-    margin-left: 10px;
-    border-radius: 20px;
-    overflow: hidden !important;
+    width: 85%;
+    max-width: 400px;
+    height: 220px;
   }
   
   .cardContainer h1 {
-    margin: 0;
-    margin-left: 60px;
-    margin-top: 15px;
-    color: white;
-    letter-spacing: 5px;
+    margin-left: 50px;
+    font-size: 18px;
+    letter-spacing: 3px;
+  }
+  
+  .mostSection {
+    width: 80%;
+    max-width: 300px;
+  }
+  
+  .mostSection h1 {
     font-size: 20px;
-    font-weight: 200;
-    text-transform: uppercase;
+  }
+}
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .rowWrapperContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 0 15px;
   }
   
-  .inside {
-    margin-left: 30px;
+  .topSection {
+    width: 95%;
+    max-width: 500px;
   }
   
-  .text1 {
-    margin-top: 80px;
-    margin-left: 20px;
+  .topSection h1 {
+    font-size: 22px;
+    letter-spacing: 3px;
   }
   
-  .text2 {
-    margin-top: -60px;
-    margin-left: 160px;
-  }
-  
-  .text3 {
-    margin-top: -58px;
-    margin-left: 280px;
-  }
-  
-  .uocImage {
-    margin-top: -55px;
-    margin-left: 70px;
-    width: 80px;
-    height: auto;
-  }
-  
-  .uomImage {
-    margin-top: -55px;
-    margin-left: 190px;
-    width: 90px;
-    height: auto;
-  }
-  
-  .rowContainer {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
+  .customBackground {
+    width: 95%;
+    max-width: 500px;
+    height: 320px;
   }
   
   .rowWrapper {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 50px;
+    gap: 0;
+    margin-top: 30px;
+  }
+  
+  .cardContainer {
+    width: 90%;
+    max-width: 380px;
+    height: 200px;
+    margin-left: 0;
+  }
+  
+  .cardContainer h1 {
+    margin-left: 40px;
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+  
+  .mostSection {
+    width: 85%;
+    max-width: 280px;
+    height: 45px;
+  }
+  
+  .mostSection h1 {
+    font-size: 18px;
+  }
+  
+  .inside {
+    margin-left: 25px;
+  }
+  
+  .text1 {
+    margin-top: 60px;
+    margin-left: 15px;
+    font-size: 14px;
+  }
+  
+  .text2 {
+    margin-top: -50px;
+    margin-left: 130px;
+    font-size: 14px;
+  }
+  
+  .text3 {
+    margin-top: -48px;
+    margin-left: 220px;
+    font-size: 14px;
+  }
+  
+  .team1Logo {
+    margin-top: -45px;
+    margin-left: 55px;
+    width: 65px;
+  }
+  
+  .team2Logo {
+    margin-top: -45px;
+    margin-left: 155px;
+    width: 70px;
   }
   
   .wonSection {
-    background-color: #FF4202;
-    width: 300px;
-    height: 60px;
-    margin-left: 100px;
-    margin-top: 80px;
-    padding: 10px 0;
-    text-align: center;
-    border-radius: 15px;
+    width: 80%;
+    max-width: 200px;
+    height: 45px;
   }
   
   .wonSection h1 {
-    margin-top: -8px;
-    margin-left: -20px;
-    color: white;
+    font-size: 12px;
+  }
+}
+
+/* Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .trendingContainer {
+    padding: 0 10px;
+  }
+  
+  .rowWrapperContainer {
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .topSection {
+    width: 95%;
+    max-width: 400px;
+    padding: 8px 0;
+  }
+  
+  .topSection h1 {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+  
+  .customBackground {
+    width: 95%;
+    max-width: 400px;
+    height: 280px;
+  }
+  
+  .cardContainer {
+    width: 90%;
+    max-width: 320px;
+    height: 180px;
+    margin-top: 30px;
+  }
+  
+  .cardContainer h1 {
+    margin-left: 30px;
+    margin-top: 12px;
+    font-size: 14px;
     letter-spacing: 1px;
-    text-transform: lowercase;
   }
   
-  .addContainer3 {
-   
- 
-    background-color: black;
-    min-height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .mostSection {
+    width: 85%;
+    max-width: 240px;
+    height: 40px;
   }
   
-  .add-container3 h1 {
-    color: white;
-    margin: 0;
+  .mostSection h1 {
+    font-size: 16px;
   }
   
+  .inside {
+    margin-left: 20px;
+  }
+  
+  .text1 {
+    margin-top: 50px;
+    margin-left: 12px;
+    font-size: 12px;
+  }
+  
+  .text2 {
+    margin-top: -42px;
+    margin-left: 105px;
+    font-size: 12px;
+  }
+  
+  .text3 {
+    margin-top: -40px;
+    margin-left: 180px;
+    font-size: 12px;
+  }
+  
+  .team1Logo {
+    margin-top: -38px;
+    margin-left: 45px;
+    width: 55px;
+  }
+  
+  .team2Logo {
+    margin-top: -38px;
+    margin-left: 125px;
+    width: 60px;
+  }
+  
+  .wonSection {
+    width: 75%;
+    max-width: 180px;
+    height: 40px;
+  }
+  
+  .wonSection h1 {
+    font-size: 14px;
+     margin-top: 0px;
+  }
+  
+  .advertisementContainer {
+    min-height: 80px;
+    margin: 0 -10px;
+  }
+  
+  .advertisementContainer h1 {
+    font-size: 18px;
+  }
+}
+
+/* Small Mobile Devices (max-width: 360px) */
+@media (max-width: 360px) {
+  .topSection {
+    width: 98%;
+    max-width: 320px;
+  }
+  
+  .topSection h1 {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  
+  .customBackground {
+    width: 98%;
+    max-width: 320px;
+    height: 250px;
+  }
+  
+  .cardContainer {
+    width: 95%;
+    max-width: 280px;
+    height: 160px;
+  }
+  
+  .cardContainer h1 {
+    margin-left: 25px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+  
+  .mostSection {
+    width: 90%;
+    max-width: 200px;
+    height: 35px;
+  }
+  
+  .mostSection h1 {
+    font-size: 14px;
+  }
+  
+  .inside {
+    margin-left: 15px;
+  }
+  
+  .text1 {
+    margin-top: 40px;
+    margin-left: 10px;
+    font-size: 11px;
+  }
+  
+  .text2 {
+    margin-top: -35px;
+    margin-left: 85px;
+    font-size: 11px;
+  }
+  
+  .text3 {
+    margin-top: -33px;
+    margin-left: 150px;
+    font-size: 11px;
+  }
+  
+  .team1Logo {
+    margin-top: -32px;
+    margin-left: 35px;
+    width: 45px;
+  }
+  
+  .team2Logo {
+    margin-top: -32px;
+    margin-left: 105px;
+    width: 50px;
+  }
+  
+  .wonSection {
+    width: 70%;
+    max-width: 150px;
+    height: 35px;
+  }
+  
+  .wonSection h1 {
+    font-size: 10px;
+  }
+  
+  .advertisementContainer h1 {
+    font-size: 16px;
+  }
+}
+
+/* Extra Small Devices (max-width: 320px) */
+@media (max-width: 320px) {
+  .topSection h1 {
+    font-size: 14px;
+  }
+  
+  .customBackground {
+    height: 220px;
+  }
+  
+  .cardContainer {
+    height: 140px;
+  }
+  
+  .cardContainer h1 {
+    margin-left: 20px;
+    font-size: 11px;
+  }
+  
+  .mostSection h1 {
+    font-size: 12px;
+  }
+  
+  .text1, .text2, .text3 {
+    font-size: 10px;
+  }
+  
+  .text2 {
+    margin-left: 75px;
+  }
+  
+  .text3 {
+    margin-left: 130px;
+  }
+  
+  .team1Logo {
+    width: 40px;
+    margin-left: 30px;
+  }
+  
+  .team2Logo {
+    width: 45px;
+    margin-left: 95px;
+  }
+  
+  .wonSection h1 {
+    font-size: 9px;
+  }
+}

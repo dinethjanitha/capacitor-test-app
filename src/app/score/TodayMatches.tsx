@@ -62,11 +62,14 @@ const MatchCard = () => {
   return (
     <div className={styles.wrapper1}>
       <div className={styles.heading1}> <h2 className={` ${styles.heading} ${zenfont.className}`}>TODAY MATCHES</h2></div>
+      <div className={styles.cardContainer}>
+      {[...Array(3)].map((_, index) => (
+      <div key={index}>
       {previousMatches && previousMatches.map((match) => (
-        <div key={match._id} className={styles.card}>
-          <div className={styles.team}>
+         <div key={match._id} className={styles.card}>
+          <div className={styles.teamT} >
+            <div className={styles.image1}><Image className={styles.images1} width={100} height={100}  src="/UOC.png" alt="Team 1" /></div>
             <div className={styles.leftTeam}></div>
-            <div className={styles.image1}><Image width={200} height={200}  src="/UOC.png" alt="Team 1" /></div>
           </div>
           <div className={styles.scoreSection}>
             <p className={` ${styles.league} ${zenfont.className}`}>{match.matchName}</p>
@@ -76,13 +79,16 @@ const MatchCard = () => {
               match.teamOneScore == match.teamTwoScore ? ("Match Draw") : (<p className={`${styles.result}  ${zenfont.className}`}><span>{match.teamTwoScore}</span> won the match</p>)
             )}
           </div>
-          <div className={styles.team}>
+          <div className={styles.teamT}>
             <div className={styles.rightTeam}></div>
-            <div className={styles.image2}><Image width={200} height={200} src="/UOM.png" alt="Team 2" /></div>
+            <div className={styles.image2}><Image className={styles.images2} width={100} height={100} src="/UOM.png" alt="Team 2" /></div>
           </div>
-        </div>
+         </div>     
       ))}
     </div>
+      ))}
+      </div>
+  </div>
   );
 };
 

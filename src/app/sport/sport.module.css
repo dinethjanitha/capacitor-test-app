@@ -42,7 +42,7 @@
   letter-spacing: 0.3rem;
 }
 
-.matchBanner {
+.matchBannerN {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -120,7 +120,7 @@
     font-size: 1.5rem;
   }
   
-  .matchBanner {
+  .matchBannerN {
     align-items: center;
     gap: 0.5rem;
   }
@@ -333,7 +333,7 @@
   border: none;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
-  padding: 0.45rem 1.5rem;
+  padding: 0rem 1.5rem;
   font-size: 16px;
   cursor: pointer;
   box-shadow: 0 -4px 6px rgba(136, 34, 9, 0.2); 

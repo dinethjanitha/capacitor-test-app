@@ -225,3 +225,9 @@
     top: 0;
   }
 }
+
+@media (max-width: 404px) {
+  .championshipTitle {
+    font-size: 18px; /* or any smaller size you prefer */
+  }
+}

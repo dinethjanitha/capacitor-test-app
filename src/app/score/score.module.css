@@ -279,7 +279,6 @@
 /*match */
 .wrapper1 {
   background: linear-gradient(to right, #121212, #2e2e2e, #121212);
-  font-family: 'Orbitron', sans-serif;
   color: white;
 }
 .heading1{
@@ -301,79 +300,71 @@ background: linear-gradient(0deg, #FF4202 0%, #992801 100%);
   height: 53px;
   width: 447px;
 }
-
-.card {
+.cardContainer{
+  padding: 10px 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.card { 
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  min-width: 600px;
   justify-content: space-between;
+  align-items: center;
+  height: 137px;
+  width: 1230px;
+  border: 1px solid #FFFFFF54;
+  box-shadow: 0px 4px 4px 0px #000000B5;
   background: linear-gradient(90deg, #000000 14.47%, #3F3E3E 49.52%, #000000 86.54%);
   border-radius: 20px;
-  margin: 2rem;
-  overflow: hidden;
-  border: 1px solid #777;
-  height: 137px;
+  margin: 0 auto;
+  cursor: pointer;
 }
 
 .teamT {
-  width: 255px;
-  height: 160px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  position: relative;
-  z-index: 2;
 }
 .image1{
-background: linear-gradient(0deg, #FF4202 0%, #992801 100%);
-    height: 160px;
-    width: 170px;
-     position: relative;
-     right: 3.3rem;
+    background: linear-gradient(0deg, #FF4202 0%, #992801 100%);
+    height: 137px;
+    width: 130px;
     display: flex;
-  justify-content: center;
-  align-items: center;
+    flex-direction: row;
+    border-radius: 20 0 0 20;
+
 }
 .image2{
-background: linear-gradient(0deg, #FF4202 0%, #992801 100%);
-    height: 160px;
-    width: 170px;
-    margin-right: -6.6rem;
+    background: linear-gradient(0deg, #FF4202 0%, #992801 100%);
+    height: 137px;
+    width: 130px;
     display: flex;
-  justify-content: center;
-  align-items: center;
+    flex-direction: row-reverse;
+    border-radius: 0 20 20 0;
 }
-.teamT img {
-  max-width: 80px;
-  position: relative;
-  z-index: 2;
-}
-
 .leftTeam,
 .rightTeam {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 257px;
-  height: 160px;
-  z-index: 1;
+  width: 200px;
+  height: 137px;
 }
 
 .leftTeam {
-  margin-left:20rem;
   clip-path: polygon(0 0, 35% 0, 0% 50%, 35% 100%, 0 100%);
 background: linear-gradient(0deg, #FF4202 0%, #992801 100%);
 }
 
 .rightTeam {
-  margin-right: 20rem;
+  
   clip-path: polygon(100% 0, 65% 0, 100% 50%, 65% 100%, 100% 100%);
-background: linear-gradient(0deg, #FF4202 0%, #992801 100%);
+  background: linear-gradient(0deg, #FF4202 0%, #992801 100%);
 }
-
+.images1,
+.images2{
+    margin:20px;
+}
 .scoreSection {
   text-align: center;
   width: 60%;
-  z-index: 1;
 }
 
 .league {
@@ -393,23 +384,11 @@ background: linear-gradient(0deg, #FF4202 0%, #992801 100%);
   letter-spacing: 0.2rem;
   
 }
-
 .result span {
   color: #ff4d00;
   font-weight: bold;
 }
-@media (max-width: 700px) {
-  .result{
-    padding-bottom: 2rem;
-  }
-  .league{
-    padding-top: 2rem;
-  }
-  .leftTeam,
-  .rightTeam {
-    display: none;
-  }
-}
+
 
 
 /*standing*/
@@ -471,8 +450,6 @@ background: linear-gradient(0deg, #FF4202 0%, #992801 100%);
   color: white; 
 }
 
-
-/* Desktop Table Styles */ 
 .tableContainerDesktop { 
   margin: 2rem;
   border-radius: 10px; 

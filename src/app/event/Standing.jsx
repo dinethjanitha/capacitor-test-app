@@ -157,7 +157,7 @@ const Standing = () => {
       {/* Desktop View (Hidden on very small screens) */}
       <div className={styles['table-container-desktop']}>
         <div className={styles['table-header']}>
-          <div className={styles['col-team']}>TEAM</div>
+          <div className={styles['col-team']}></div>
           <div className={styles['col-stat']}>P</div>
           <div className={styles['col-stat']}>F:A</div>
           <div className={styles['col-stat']}>+/-</div>

@@ -9,7 +9,7 @@ import styles from './about.module.css';
 import NavBarMain from '../Components/NavBarMain';
 import Header from './Header';
 import Advertisement from '../Components/Advertisment';
-import Footer from '../Components/footer';
+import Footer from './footer';
 
 export default function HomePage() {
   return (
