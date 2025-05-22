@@ -19,3 +19,11 @@ const page = async ({params} : Props) => {
 }
 
 export default page
+
+export async function generateStaticParams() {
+  return [
+    { id: 'stream1' },
+    { id: 'stream2' },
+    { id: 'stream3' }
+  ]
+}
